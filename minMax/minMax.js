@@ -3,12 +3,17 @@
 //and return, respectively, the largest and lowest number in that list.
 
 var min = function(list){
-  list.sort();
-  return list[0];
+  let minInt = list[0]
+  for (var i = 0; i < list.length; i++) {
+    if (list[i] < minInt) {
+      minInt = list[i]
+    }
+  }
+  return minInt;
 }
 
 var max = function(list){
-  let maxInt = '';
+  let maxInt = list[0];
   for (var i = 0; i < list.length; i++) {
     if (list[i] > maxInt) {
       maxInt = list[i]
