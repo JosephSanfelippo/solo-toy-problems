@@ -8,3 +8,6 @@
 //under which you need to set an alarm). It should return
 //false otherwise. Examples:
 
+function setAlarm(employed, vacation){
+  return (employed && !vacation);
+}
