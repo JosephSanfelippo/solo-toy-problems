@@ -1,2 +1,11 @@
 //return sum of all positive integers in input array
 
+function positiveSum(arr) {
+  let sum = 0;
+  for(var i = 0; i < arr.length; i++){
+    if (arr[i] > 0){
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
