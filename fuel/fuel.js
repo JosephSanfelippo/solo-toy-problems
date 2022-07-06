@@ -2,5 +2,5 @@
 //to the pump before you run out of gas
 
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-
+  return (distanceToPump <= (mpg * fuelLeft) ? true : false);
 };
